@@ -3,7 +3,7 @@ let ammountEntered = prompt("How much money do you have");
 /* We can do an explicit comparisson to the null value returned from the user pressing cancel */
 // if (ammountEntered === null) {
 /* Or we can use null's falsy behaviour */
-if (ammountEntered) {
+if (!ammountEntered) {
   console.log("User pressed Cancel or did not enter ammount");
 } else {
   console.log(`You entered ${ammountEntered}`);
