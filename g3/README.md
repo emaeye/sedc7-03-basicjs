@@ -12,7 +12,7 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 - Working with the `if` statement
 - Introduction to functions
 
-##Lecture 3
+## Lecture 3
 - Functions
 - Functions
 - Functions
