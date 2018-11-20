@@ -16,3 +16,7 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 - Functions
 - Functions
 - Functions
+
+## Lecture 4
+- Arrays
+- Looping structures
