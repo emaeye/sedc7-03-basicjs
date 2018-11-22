@@ -1,0 +1,22 @@
+// Cheat Sheet
+// Selectors
+document.getElementById("id");
+document.getElementsByClassName("class");
+document.getElementsByTagName("p");
+document.querySelector("#id");
+document.querySelector(".class");
+document.querySelector("p");
+
+// Traversing through elements
+let element = document.getElementById("id");
+element.nextElementSibling;
+element.previousElementSibling;
+element.parentElement;
+element.firstElementChild;
+element.lastElementChild;
+element.children;
+
+// Editing text and content
+element.textContent = "";
+element.innerText += "Hey";
+element.innerHTML += `<p> something </p>`;
