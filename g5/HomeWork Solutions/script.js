@@ -91,7 +91,6 @@ if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
 console.log("======Exercise 6 Result======");
 console.log(result2);
 
-
 //Write an algorithm to determine a student’s final grade and  
 //indicate whether it is passing or failing. The final grade is 
 //calculated as the average of four marks.
@@ -277,7 +276,7 @@ console.log("Sorted array is: " + array);
 var array = [];
 
 for (var i = 0; i < 10; i++) {
-  array[i] = new Array(10);
+  	array[i] = new Array(10);
 }
 
 for (var x = 0; x < 10; x++) {
@@ -291,10 +290,10 @@ array[1][4] = 5;
 // uncomment code below to print the matrix on the display
 
 // for (var x = 0; x < array.length; x++) {
-//  for (var y = 0; y < array[x].length; y++) {
-//      document.writeln(array[x][y]);
-//  }
-//  document.writeln("<br />")
+// 	for (var y = 0; y < array[x].length; y++) {
+//     	document.writeln(array[x][y]);
+//  	}
+// 	document.writeln("<br />")
 // }
 
 var flag = true;
