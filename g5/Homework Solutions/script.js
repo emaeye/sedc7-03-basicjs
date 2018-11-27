@@ -7,6 +7,18 @@ var feetToMeters = feet * 0.3048;
 console.log("======Exercise 1 Result======");
 console.log(feet + " feet(s) are equal to " + feetToMeters + " meters.");
 
+//Write a JavaScript program that will calculate the age of the  
+//user if the user inputs his birth year.
+
+var inputForDenars = 100; //parseInt(prompt("Please enter the amount of denars here: "));
+var euroConversionRate = 61.5;
+
+var denarsToEuro = inputForDenars / euroConversionRate;
+var finalSum = denarsToEuro.toFixed(2);
+
+console.log("======Exercise 2 Result======");
+console.log(inputForDenars + " denars are " + finalSum + " euros.");
+
 //Write an JavaScript program that will read the two 
 //sides of a rectangle and calculate its area
 
@@ -14,7 +26,7 @@ var sideA = 5;
 var sideB = 10;
 var rectangleArea = sideA * sideB;
 
-console.log("======Exercise 2 Result======");
+console.log("======Exercise 3 Result======");
 console.log("Rectangle area is equal to " + rectangleArea + " m2.");
 
 //Write an JavaScript program that will 
@@ -24,7 +36,7 @@ var radius = 10;
 var Pi = 3.14;
 var circleArea = Pi * (radius * radius);
 
-console.log("======Exercise 3 Result======");
+console.log("======Exercise 4 Result======");
 console.log("The area of the circle with the radius of " + radius + " m is " + circleArea + " m2.");
 
 //Write JavaScript that will calculate the price of 30 Phones, where 
@@ -37,7 +49,7 @@ var tax = 0.05;
 var totalPriceWithoutTax = numberOfPhones * phonePrice;
 var total = totalPriceWithoutTax + (totalPriceWithoutTax * tax);
 
-console.log("======Exercise 4 Result======");
+console.log("======Exercise 5 Result======");
 console.log("The price with tax on " + numberOfPhones + " phones if the price on one phone is " + phonePrice + "$ is " + total + "$.");
 
 //Write JS program to read two values from input, 
@@ -57,7 +69,7 @@ if (num1 === num2) {
 	result1 = "Invalid input!";
 }
 
-console.log("======Exercise 5 Result======");
+console.log("======Exercise 6 Result======");
 console.log(result1);
 
 //Write a JS program to read three values from input, determine
@@ -88,7 +100,7 @@ if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
 	}
 }
 
-console.log("======Exercise 6 Result======");
+console.log("======Exercise 7 Result======");
 console.log(result2);
 
 //Write an algorithm to determine a student’s final grade and  
@@ -109,7 +121,7 @@ if (averageGrade >= 6) {
 	result3 = "You have failed with a average score of: " + averageGrade + ".";
 }
 
-console.log("======Exercise 7 Result======");
+console.log("======Exercise 8 Result======");
 console.log(result3);
 
 //Write javascript code that will calculate which Chinese Zodiac a given year is in.
@@ -173,12 +185,163 @@ switch(chineseZodiacFormula) {
         result = "Invalid Input!";
 }
 
-console.log("======Exercise 8 Result======");
+console.log("======Exercise 9 Result======");
 if (!isNaN(yearOfBirth)) {
 	console.log("Chinese zodiac for people born in the year " + yearOfBirth + " is " + result + ".");
 } else {
 	console.log(result);
 }
+
+//Write a JavaScript program where the program takes a random integer between 
+//1 to 10. If the user input matches this 10 numbers, print them with words, else 
+//print invalid input. Example if input is 4, output should be "four". If something else 
+//is given as input, program should alert "invalid input".
+
+var inputRandomNumber = Math.floor(Math.random() * 10) + 1;
+var result = '';
+
+//in this case default never gona run because input wil lalways be an integer between 1 and 10.
+
+switch (inputRandomNumber) {
+  case 1:
+    result = "One"
+    break;
+  case 2:
+    result = "Two"
+    break;
+  case 3:
+    result = "Three"
+    break; 
+  case 4:
+    result = "Four"
+    break; 
+  case 5:
+    result = "Five"
+    break; 
+  case 6:
+    result = "Six"
+    break; 
+  case 7:
+    result = "Seven"
+    break;   
+  case 8:
+    result = "Eight"
+    break;
+  case 9:
+    result = "Nine"
+    break;   
+  case 10:
+    result = "Ten"
+    break; 
+  default:
+    result = "Invalid input!";
+}
+
+console.log("======Exercise 10 Result======");
+console.log(result);
+
+//Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+//Formula for calculating area of the triangle = 
+//square root of halfperimeter * (halfperimeter - side1) * (halfperimeter - side2) * (halfperimeter - side3)
+//Formula for calculating perimeter = side1 + side2 + side3.
+
+var side1 = 5; 
+var side2 = 6; 
+var side3 = 7; 
+
+var perimeter = side1 + side2 + side3;
+var halfPerimeter = perimeter / 2;
+
+var triangleArea =  Math.sqrt(halfPerimeter*((halfPerimeter-side1)*(halfPerimeter-side2)*(halfPerimeter-side3)));
+
+console.log("======Exercise 11 Result======");
+console.log("The area of the triangle is: " + triangleArea);
+
+//Write a JavaScript program that will find the sum of all items in the given array,  
+//make it dynamic, so the result will change if the array is changed. 
+
+var array5 = [1,2,3,4,5,6,7,8,9,10];
+var sum2 = 0;
+
+for (var i = 0; i < array5.length; i++) {
+  sum2 += array5[i];
+}
+console.log("======Exercise 12 Result======");
+console.log("The sum of the all integers is the array is " + sum2);
+
+sum2 = 0;
+array5.push(11);
+
+for (var i = 0; i < array5.length; i++) {
+  sum2 += array5[i];
+}
+console.log("The sum of the all integers is the array with the new element is " + sum2);
+
+//Write javascript program that will take the items from a given array 
+//and make new aray with the same items in revers order.
+
+var array6 = [1,2,3,4,5,6,7,8,9,10];
+var array6reverse = [];
+
+for (var i = array6.length - 1; i >= 0; i--) {
+  array6reverse.push(array6[i])
+}
+
+console.log("======Exercise 13 Result======");
+console.log(array6reverse);
+
+//Write a JavaScript program that will find the sum of all positive numbers in the array.
+
+var array6 = [1,2,3,4,5];
+var sum4 = 0;
+
+for (var i = 0; i <= array6.length; i++) {
+    if (array6[i] % 2 === 0) {
+        sum4 += array6[i];
+    }
+}
+
+console.log("======Exercise 14 Result======");
+console.log(sum4);
+
+//Write javascript program that will find the average value 
+//from the all the item values in the given array.
+
+var array7 = [1,2,3,4,5,6,7,8,9];
+var sum5 = 0;
+
+for (var i = 0; i < array7.length; i++) {
+    sum5 += array7[i];
+}
+
+var array7average = sum5 / array7.length;
+
+console.log("======Exercise 15 Result======");
+console.log(array7average);
+
+//Write a JavaScript that will find and log the biggest and the
+//smallest number in an array
+
+var list = [10,10,9,8,7,10,6,101,-4,6,-1,-120];
+
+var min = Infinity;
+var max = -Infinity;
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i] > max) {
+        max = list[i];
+    }
+}
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i] < min) {
+        min = list[i];
+    }
+}
+
+console.log("======Exercise 16 Result======");
+console.log('The smallest number in the array is: ' + min);
+console.log('The largest number in the array is: ' + max);
 
 //Write an JavaScript program that will calculate the 
 //product of first 10 natural numbers
@@ -189,7 +352,7 @@ for (var i = 1; i <= 10; i++) {
 	result = result * i;
 }
 
-console.log("======Exercise 8 Result======");
+console.log("======Exercise 17 Result======");
 console.log("The product of first 10 natural numbers : " + result + ".");
 
 //Write an JavaScript program that will read number from 
@@ -208,7 +371,7 @@ while (inputNumber !== 0) {
 	}
 }
 
-console.log("======Exercise 9 Result======");
+console.log("======Exercise 18 Result======");
 console.log("The input number contains " + counter + " digits of number 7.");
 
 //Write an JavaScript program that will read numbers from 
@@ -233,7 +396,7 @@ console.log("The input number contains " + counter + " digits of number 7.");
 //     console.log(inputs);
 // }
 
-console.log("======Exercise 10 Result======");
+console.log("======Exercise 19 Result======");
 console.log("Because of the alerts and promts are manditory, the exercise is commented, \n uncomment the exercise or copy the code in the chrome console, in order to test it.");
 
 //Write a program in JavaScript to read n number of 
@@ -246,7 +409,7 @@ for (var i = inputs2.length - 1; i >= 0; i--) {
     inputs2Reversed.push(inputs2[i])
 }
 
-console.log("======Exercise 11 Result======");
+console.log("======Exercise 20 Result======");
 console.log(inputs2Reversed);
 
 //Write a JavaScript program to sort the items of an array.
@@ -265,8 +428,26 @@ for (var i = array.length - 1; i >= 0; i--) {
     }
 }
 
-console.log("======Exercise 12 Result======");
+console.log("======Exercise 21 Result======");
 console.log("Sorted array is: " + array);
+
+//Write javascript program that will find all numbers divisable 
+//by 7 and 3 in array from 1 to 100.
+
+var array9 = [];
+for (var i = 0; i <= 100; i++) {
+  array9.push(i);
+}
+
+var array9one = [];
+for (var i = 0; i < array9.length; i++) {
+    if (array9[i] % 7 === 0 && array9[i] % 3 === 0) {
+        array9one.push(array9[i]);
+    }
+}   
+
+console.log("======Exercise 22 Result======");
+console.log(array9one);
 
 //Write a JavaScript program to check whether a matrix is a diagonal matrix or not. 
 //In linear algebra, a diagonal matrix is a matrix in which the entries outside 
@@ -308,7 +489,7 @@ for (var x = 0; x < array2.length; x++) {
     }
 }
  
-console.log("======Exercise 13 Result======");     
+console.log("======Exercise 23 Result======");     
 console.log("click the arrow in the console under this so u can see the matrix.");   
 console.log(array2);
 
@@ -335,7 +516,7 @@ for( var j=0; j < array1.length; j++){
     }
 }
 
-console.log("======Exercise 14 Result======");
+console.log("======Exercise 24 Result======");
 console.log("The array without duplacates is: " + array1);
 
 //Write a JavaScript program which accept a number as input and insert dashes (-) between 
@@ -363,14 +544,14 @@ for(var j = 0; j < array3.length; j++) {
 
 var finalResult = sortArray.join('');
 
-console.log("======Exercise 15 Result======");
+console.log("======Exercise 25 Result======");
 console.log("Result is: " + finalResult);
 
 //Write a JavaScript program which prints the elements of the following array. Note: Use nested for loops.
 //Sample array: var a = [[1, 2], [8, 11], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
 
 var array4 = [[1, 2], [8, 11], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
-console.log("======Exercise 16 Result======");
+console.log("======Exercise 26 Result======");
 
 for (var i = 0 ; i < array4.length ; i++) { 
     console.log("Row: " + i);
@@ -380,26 +561,4 @@ for (var i = 0 ; i < array4.length ; i++) {
     }
 }
 
-//Write a JavaScript that will find and log the biggest and the
-//smallest number in an array
 
-var list = [10,10,9,8,7,10,6,101,-4,6,-1,-120];
-
-var min = Infinity;
-var max = -Infinity;
-
-for (let i = 0; i < list.length; i++) {
-    if (list[i] > max) {
-        max = list[i];
-    }
-}
-
-for (let i = 0; i < list.length; i++) {
-    if (list[i] < min) {
-        min = list[i];
-    }
-}
-
-console.log("======Exercise 17 Result======");
-console.log('The smallest number in the array is: ' + min);
-console.log('The largest number in the array is: ' + max);
