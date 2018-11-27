@@ -20,3 +20,7 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 ## Lecture 4
 - Arrays
 - Looping structures
+
+## Lecture 5 
+- DOM 
+-DOM Manipulations
