@@ -528,17 +528,13 @@ var sortArray = [];
 for(var j = 0; j < array3.length; j++) {
     for(var i = j + 1; i <= array3.length; i++){
 
-            if (array3[j] % 2 === 0 && array3[i] % 2 === 0){
-                
-                sortArray.push(array3[j], "-");
-                break;
-            }
-
-            else {
-                
-                sortArray.push(array3[j]);
-                break;
-            }
+	    if (array3[j] % 2 === 0 && array3[i] % 2 === 0){      
+	        sortArray.push(array3[j], "-");
+	        break;
+	    } else {
+	        sortArray.push(array3[j]);
+	        break;
+	    }
     }
 }
 
@@ -560,5 +556,111 @@ for (var i = 0 ; i < array4.length ; i++) {
         console.log(array4[i][j])
     }
 }
+
+//Find the element that has the biggest length.
+
+var array10 = ["Viktor", "Orce", "Stojance", "Dejan"]
+var array10max = -1;
+var index;
+
+for (var i = 0; i < array10.length; i++) {
+  if (array10[i].length > array10max) {
+    array10max = array10[i].length
+    index = i;
+  }  
+}
+
+console.log("======Exercise 27 Result======");
+console.log(array10[index]);
+
+//Concatenate all the elements into a result string.
+
+var array11 = ["Viktor", "Orce", "Stojance", "Dejan"];
+var array11Concatenated = '';
+
+for (var i = 0; i < array11.length; i++) {
+  array11Concatenated += array11[i];
+}
+
+console.log("======Exercise 28 Result======");
+console.log(array11Concatenated);
+
+//Reverse the element that has the biggest length. Example : "javascript" -> "tpircsavaj"
+
+var array12 = ["Viktor", "Orce", "Stojance", "Dejan"]
+var max = -1;
+var index;
+
+for (var i = 0; i < array12.length; i++) {
+  if (array12[i].length > max) {
+    max = array12[i].length
+    index = i;
+  }  
+}
+
+var biggestReversed = array12[index].split('').reverse().join('');
+
+console.log("======Exercise 29 Result======");
+console.log(biggestReversed);
+
+//Find all the palindroms in the array. A palindrom is a word that is equal to the reversed word. Ex : "Ana" , "Bob" "boob"
+
+var palindromArray = ["viktor", "anna", "otto", "orce", "stojance", "bob"];
+var palindromeArrayReversed = [];
+var palindromOnlyArray = [];
+
+for (var i = 0; i < palindromArray.length; i++) {
+  palindromeArrayReversed.push(palindromArray[i].split('').reverse().join(''));
+}
+
+for (var i = 0; i < palindromArray.length; i++) {
+  if (palindromArray[i] === palindromeArrayReversed[i]) {
+    palindromOnlyArray.push(palindromArray[i]);
+  }
+} 
+
+console.log("======Exercise 30 Result======");
+console.log(palindromOnlyArray);
+
+//Create a new array that the elements are the lenghts of the elements in the previous array.
+
+var array13 = ["Viktor", "Orce", "Stojance", "Dejan"];
+var array13withLength = [];
+
+for (var i = 0; i < array13.length; i++) {
+  array13withLength.push(array13[i].length);
+}
+
+console.log("======Exercise 31 Result======");
+console.log(array13withLength);
+
+//Remove the minimum and the maximum from the array
+
+var array14 = [2,6,4,8,2,13,8,9,13,4];
+var array14min = Infinity;
+var array14max = -Infinity;
+
+for (var i = 0; i < array14.length; i++) {
+  if(array14[i] < array14min) {
+    array14min = array14[i];
+  }
+  
+  if(array14[i] > array14max) {
+    array14max = array14[i]; 
+  }
+}
+
+for (var i = 0; i < array14.length; i++) {
+  if(array14[i] === array14min) {
+    array14.splice(i, 1);
+  }
+  
+  if(array14[i] === array14max) {
+    array14.splice(i, 1);
+  }  
+}
+
+console.log("======Exercise 32 Result======");
+console.log(array14);
 
 
