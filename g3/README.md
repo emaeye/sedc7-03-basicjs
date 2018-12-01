@@ -24,3 +24,6 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 ## Lecture 5 
 - DOM 
 - DOM Manipulations
+
+## Lecture 6
+- Events
