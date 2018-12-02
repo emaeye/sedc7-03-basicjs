@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>How much money</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 7: How much money</h2>
+            <br>
+            <p>Ask the user how much money he has, and depending on the value, suggest to him what he should do.</p>
+            <br>
+            <pre><code class="code">
+    function howMuchMoney() {
+        var input = prompt('How much money do you have?');
+    
+        if (input === null || input === '' || isNaN(input)) {
+            alert('Please enter a valid number!');
+            howMuchMoney();
+        } else if (input <= 0) {
+            alert('You need to find a job.');
+        } else if (input > 0 && input <= 100) {
+            alert('You can buy a chocolate bar.');
+        } else if (input > 100 && input <= 500) {
+            alert('You can go to a restaurant.');
+        } else if (input > 500 && input <= 1000) {
+            alert('You can go to the cinema with your friends.');
+        } else {
+            alert('You can probably do whatever you want.');
+        }
+    }
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework07.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+* {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.small-image {
+    width: 100px;
+    margin: 20px;
+}
+
+.code {
+    display: block;
+    font-family: "Lucida Console", Monaco, monospace;
+    overflow-x: auto;
+    background: #3f3f3f;
+    color: #dcdcdc;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+}
+
+#wrapper {
+    background: url(../images/jj-ying-236821a.jpg) no-repeat fixed center;
+    width: 80%;
+    height: 150vh;
+    padding: 5% 10%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Remove duplicates from array</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 13: Remove duplicates from array</h2>
+            <br>
+            <p>Write a JavaScript program to remove duplicate items from an array.</b></p>
+            <br>
+            <pre><code class="code">
+    var array = [1, 2, 3, 4, 1, 2, 5, 4, 8, 5, 10, 45, 2];
+
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i; j < array.length; j++) {
+            if (j === i) {
+                var number = array[j];
+            }
+    
+            if (j !== i && number === array[j]) {
+                var index = j;
+                array.splice(index, 1);
+            }
+        }
+    }
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework13.js" type="text/javascript"></script>
+</body>
+
+</html>

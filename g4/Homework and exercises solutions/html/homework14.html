@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Insert dashes in array</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 14: Insert dashes in array</h2>
+            <br>
+            <p>Write a JavaScript program which accept a number as input and insert dashes (-) between each two even
+                numbers. For example if you accept 025468 the output should be 0-254-6-8.</b></p>
+            <br>
+            <pre><code class="code">
+    var number = 122344566789;
+    var stringInput = number.toString();
+    var result = [stringInput[0]];
+    
+    for (var i = 1; i < stringInput.length; i++) {
+        if ((stringInput[i - 1] % 2 === 0) && (stringInput[i] % 2 === 0)) {
+            result.push('-', stringInput[i]);
+        } else {
+            result.push(stringInput[i]);
+        }
+    }
+    
+    console.log(result.join(''));
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework14.js" type="text/javascript"></script>
+</body>
+
+</html>

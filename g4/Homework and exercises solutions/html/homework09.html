@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Pyramid pattern</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 9: Pyramid pattern</h2>
+            <br>
+            <p>Write a JavaScript program to construct the following pattern, using a nested for loop.</p>
+            <img class="small-image" src="../images/pyramid-pattern.png" alt="pyramid pattern">
+            <br>
+            <pre><code class="code">
+    var numberOfRows = 5;
+    var row = '';
+    
+    for (var i = 1; i <= numberOfRows; i++) {
+        for ( var j = 1; j <= i; j++) {
+            row += '* ';
+        }
+        console.log(`${row}\n`);
+        row = '';
+    }
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework09.js" type="text/javascript"></script>
+</body>
+
+</html>
