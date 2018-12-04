@@ -27,3 +27,6 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 
 ## Lecture 6
 - Events
+
+## Lecture 7
+- Objects 
