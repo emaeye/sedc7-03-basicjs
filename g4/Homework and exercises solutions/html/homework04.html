@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Convert degrees</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 4: Convert degrees</h2>
+            <br>
+            <p>Write TWO JavaScript functions to convert temperatures to and from Celsius and Fahrenheit. The first
+                shold convert from °F to °C, the second from °C to °F. Use these formulae: c = (f - 32) * (9 / 5) and f
+                = c * 5 / 9 + 32 (where c = temperature in Celsius and f = temperature in Fahrenheit).<br>The functions
+                should accept one parameter: the temperature in Fahrenheit for the first function, and the temperature
+                in Celsius for the second.<br>The functions should print the converted temperature in the console or in
+                an alert window.<br> Call the functions two times each with these values: 140 °F, 98 °F, 37 °C and 100
+                °C.</p>
+            <br>
+            <pre><code class="code">
+    function convertToCelsius(fahrenheit) {
+        var celsius = (fahrenheit - 32) * (5 / 9);
+        console.log(`${fahrenheit} °F is the equivalent of ${celsius} °C.`);
+    }
+    
+    function convertToFahrenheit(celsius) {
+        var fahrenheit = celsius * 9 / 5 + 32;
+        console.log(`${celsius} °C is the equivalent of ${fahrenheit} °F.`);
+    }
+    
+    convertToCelsius(140);
+    convertToCelsius(98);
+    convertToFahrenheit(37);
+    convertToFahrenheit(100);
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework04.js" type="text/javascript"></script>
+</body>
+
+</html>

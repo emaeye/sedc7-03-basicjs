@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Largest value of 10</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 18: Largest value of 10</h2>
+            <br>
+            <p>Write a JavaScript program to read ten values, determine the largest value, and print it.</b></p>
+            <br>
+            <pre><code class="code">
+    var max = -Infinity;
+    var arrayOfNumbers = [];
+    
+    for (var i = 1; i <= 10; i++) { // the first loop will ask us 10 times to enter a number, and will save that number in the array
+        var input = prompt("Enter a number:");
+        var inputNumber = Number(input);
+        arrayOfNumbers.push(inputNumber);
+    }
+    
+    for (var i = 0; i < arrayOfNumbers.length; i++) { // the second for loop will iterate through the array and find the largest number in the array
+        if (arrayOfNumbers[i] > max) {
+            max = arrayOfNumbers[i];
+        }
+    }
+    
+    
+    console.log(`The largest number is ${max}`);
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework18.js" type="text/javascript"></script>
+</body>
+
+</html>

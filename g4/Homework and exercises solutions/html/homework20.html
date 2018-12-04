@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+    <title>Age calculator</title>
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/homework.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h2>Homework 20: Age calculator</h2>
+            <br>
+            <p>Write a function named calculateAge that: takes 2 arguments: birth year, current year, calculates the
+                age based on those years, outputs the result to the screen like so: "You are NN years old".
+                Call the function three times with different sets of values.</b></p>
+            <br>
+            <pre><code class="code">
+    function calculateAge(birthYear, currentYear) {
+        let age = currentYear - birthYear;
+        console.log(`You are ${age} years old.`);
+    }
+    
+    let currentYear = new Date().getFullYear();
+    
+    calculateAge(1980, currentYear);
+    calculateAge(1990, currentYear);
+    calculateAge(2000, currentYear);
+            </code></pre>
+        </div>
+    </div>
+    <script src="../js/homework20.js" type="text/javascript"></script>
+</body>
+
+</html>
