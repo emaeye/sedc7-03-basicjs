@@ -2,20 +2,7 @@
 
 let idCounter = 3;
 
-let contacts = [
-  {
-    id: 1,
-    firstName: "Wekoslav",
-    lastName: "Stefanovski",
-    email: "swekster@gmail.com"
-  },
-  {
-    id: 2,
-    firstName: "Scarlett",
-    lastName: "Johansen",
-    email: "widow@avengers.net"
-  }
-];
+let contacts = [];
 
 let activeContact = null;
 
@@ -36,6 +23,10 @@ save.addEventListener("click", () => {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   let email = document.getElementById("email").value;
+
+  if (!validateValues(firstName, lastName, email)){
+    return;
+  }
 
   if (activeContact) {
     // we are updating a contact
@@ -58,6 +49,23 @@ save.addEventListener("click", () => {
   displayContacts(contacts);
 });
 
+
+let exportBtn = document.getElementById("export");
+
+exportBtn.addEventListener("click", () => {
+  let text = document.getElementById("json");
+  let json = JSON.stringify(contacts);
+  text.value = json;
+});
+
+let importBtn = document.getElementById("import");
+
+importBtn.addEventListener("click", () => {
+  let text = document.getElementById("json");
+  let json = text.value;
+  contacts = JSON.parse(json);
+  displayContacts(contacts);
+});
 
 /* FUNCTIONS */
 
@@ -132,6 +140,36 @@ let displayActiveContact = function (){
     lastName.value = "";
     email.value = "";
   }
+}
+
+let validateValues = function(firstName, lastName, email) {
+  let errorDiv = document.getElementById("error");
+  if (!firstName) {
+    errorDiv.textContent = "Please enter first name";
+    return false;
+  }
+  if (!firstName.match(/^[A-Z][a-z]+$/)) {
+    errorDiv.textContent = "Please enter valid first name";
+    return false;
+  }
+  if (!lastName) {
+    errorDiv.textContent = "Please enter last name";
+    return false;
+  }
+  if (!lastName.match(/^[A-Z][a-z]+$/)) {
+    errorDiv.textContent = "Please enter valid last name";
+    return false;
+  }
+  if (!email) {
+    errorDiv.textContent = "Please enter email";
+    return false;
+  }
+  if (!email.match(/^\w(\w|\.)*@\w+\.\w+$/)) {
+    errorDiv.textContent = "Please enter a valid email";
+    return false;
+  }
+  errorDiv.textContent = "";
+  return true;
 }
 
 displayContacts(contacts);
