@@ -18,6 +18,13 @@ save.addEventListener("click", () => {
   let email = document.getElementById("email").value;
 
   console.log(firstName, lastName, email);
+  let contact = {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+  };
+  contacts.push(contact);
+  renderContacts(contacts);
 });
 
 let contacts = [
@@ -37,6 +44,8 @@ let contacts = [
 
 let renderContacts = function(contacts) {
   let table = document.getElementById("result");
+  table.innerText = "";
+
   for (const contact of contacts) {
     renderContact(contact, table);
   }
