@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add groceries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>The Groceries App</h1>
+  <div id="options">
+    <input type="radio" name="groceryOption"><label for="add">Add Item</label>
+    <input type="radio" name="groceryOption"><label for="delete">Delete Item</label>
+  </div>
+  <div id="groceryForm">
+    <label>Name:</label><input type="text">
+    <label>Quantity:</label><input type="number">
+    <label>Price:</label><input type="number">
+    <button>Add</button>
+  </div>
+  <div id="delete">
+    <label>Name:</label><input type="text">
+    <button>Delete</button>
+  </div>
+  <div id="result">
+    <h2></h2>
+    <ol></ol>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
