@@ -27,6 +27,6 @@ Create a function (constructor or regular) that will return an object that descr
 - **(bonus)** `abandon` - method that abandons a pet whose owner is the person
 
 Create at least two persons. Have each of them adopt an animal from the shelter.  
-**(bonus)** The pets should be added to the `pets` array of their owners and removed form the shelter.
-**(bonus)** Have one person adopt an animal that the other has abandoned.
+**(bonus)** The pets should be added to the `pets` array of their owners and removed form the shelter.  
+**(bonus)** Have one person adopt an animal that the other has abandoned.  
 **(bonus)** Have one person adopt an animal that the other person currently owns.
