@@ -14,7 +14,7 @@ drawChristmassTree(9, 7)
   * * * * * * * 
 * * * * * * * * *
         *
-		*
+        *
 
 </pre>
 
