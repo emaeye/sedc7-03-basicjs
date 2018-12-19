@@ -7,6 +7,7 @@ drawChristmassTree(9, 7)
 ```
 
 <pre>
+
         *  
       * * *  
     * * * * * 
@@ -14,6 +15,7 @@ drawChristmassTree(9, 7)
 * * * * * * * * *
         *
 		*
+
 </pre>
 
 **bonus** Do proper validation of the input values
