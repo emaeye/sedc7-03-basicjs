@@ -13,13 +13,9 @@ Source code repository for SEDC Code Academy 7.0 3rd subject 'Basic JS Developme
 - Introduction to functions
 
 ## Lecture 3
-- Function declaration
-- Function invokation and execution
-- Arguments, parameters and return values
-- Using functions in functions
-- Using built-in functions
-- Variable scope in functions
-- Functions as values
+- Functions
+- Functions
+- Functions
 
 ## Lecture 4
 - Arrays
